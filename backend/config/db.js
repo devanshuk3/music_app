@@ -1,18 +1,18 @@
 const mongoose = require("mongoose");
 
-async function connectDB(){
+async function connectDB() {
     const mongoUri = process.env.MONGO_URI;
-    if(!mongoUri){
-        console.error("Missing MongoDB credentials. Set MONGO_URI in your environment.");
+
+    if (!mongoUri) {
+        console.error("MongoDB connection error: MONGO_URI or MONGODB_URI is not defined");
         process.exit(1);
     }
 
-    try{
+    try {
         await mongoose.connect(mongoUri);
-        console.log("MongoDB connected successfully");
-    }
-    catch(error){
-        console.error("MongoDB connection failed:", error.message);
+        console.log("MongoDB connected");
+    } catch (error) {
+        console.error("MongoDB connection error:", error.message);
         process.exit(1);
     }
 }
