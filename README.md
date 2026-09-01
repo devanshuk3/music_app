@@ -1,8 +1,8 @@
-Music App
+# Music App
 
 A simple music streaming application that lets you search for music on YouTube, download audio tracks, and manage your personal music library.
 
-What You Can Do
+## What You Can Do
 
 - Create an account and log in securely
 - Search for music videos on YouTube
@@ -10,7 +10,7 @@ What You Can Do
 - Save your favorite songs to your library
 - Manage and organize your music collection
 
-How to Get Started
+## How to Get Started
 
 1. Install dependencies:
    npm install
@@ -23,15 +23,15 @@ How to Get Started
 
 The application will run on port 5000 by default.
 
-API Overview
+## API Overview
 
-The app provides endpoints for:
+### The app provides endpoints for:
 - User registration and login
 - Searching YouTube for music
 - Managing your personal music library
 - Downloading audio from YouTube videos
 
-Technologies Used
+### Technologies Used
 
 - Node.js with Express for the backend
 - MongoDB for storing user data and music library
